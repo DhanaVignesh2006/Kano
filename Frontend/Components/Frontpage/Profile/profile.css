@@ -1,0 +1,63 @@
+.profile-container{
+  display: block;
+  height: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  animation-name: load-profile-container;
+  animation-duration: 1s;
+  transition: all 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes load-profile-container{
+  from{
+      height: 0;
+  }
+  to{
+      height: 164px;
+  }
+}
+
+.picture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(101, 201, 255);
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  font-size: 4rem;
+  transform: scale(0);
+  animation-name: load-picture;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes load-picture{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+.picture:hover{
+  opacity: 0.7;
+  transition: .5s;
+}
+
+.name{
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  cursor:default;
+  font-weight: 900;
+}
