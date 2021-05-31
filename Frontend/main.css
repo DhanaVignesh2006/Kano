@@ -1,0 +1,99 @@
+@import url("Components/Main/Modals/Input/input_1.css");
+@import url("Components/Main/Header/header.css");
+@import url("Components/Main/Modals/Change_Theme/change_theme.css");
+@import url("Components/Main/Container/Text Container/text_container.css");
+@import url("Components/Main/Container/Todo Container/todo_container.css");
+@import url("Components/Main/Container/Todo Container/todo.css");
+@import url("Components/Main/Classes/classes.css");
+@import url("Components/Main/Modals/Alert/alert.css");
+@import url("Components/Main/Modals/Input/input.css");
+
+@font-face{
+    font-family: 'Poppins';
+    src: url("assets/Poppins.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-image: url("assets/castle.jpg");
+    font-family: 'Poppins';
+    user-select: none;
+    overflow-x: hidden;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.up-arrow{
+    position: fixed;
+    bottom: 0.5%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0vh;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 48.169838945827232796486090775988%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.up-arrow:hover{
+    color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+} 
+
+.add-container{
+    display: block;
+    position: absolute;
+    bottom: 2%;
+    width: 70%;
+    height: 10vh;
+    margin-left: 15%;
+    justify-self: center;
+    border-radius: 15px;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    transform: translateY(-2000px);
+    animation-name: load-add-container;
+    box-shadow: 15px 15px 5px 5px rgba(0, 0, 0, 0.5);
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.plus-icon{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 16px;
+    opacity: 0.8;
+}
+
+@keyframes load-add-container{
+    from{
+        transform: translateY(-2000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.toggle-round{
+    visibility: visible;
+}

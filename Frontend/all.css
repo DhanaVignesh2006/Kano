@@ -1,1 +1,28 @@
+@import url("Components/All/Header/header.css");
+@import url("Components/All/Container/todo_container.css");
+@import url("Components/All/Container/todo.css");
 
+@font-face{
+  font-family: 'Poppins';
+  src: url("assets/Poppins.ttf") format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  user-select: none;
+}
+
+body{
+  background-image: url("assets/texture-bg(1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.toggle-star-button{
+  color: #fd4;
+}

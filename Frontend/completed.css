@@ -1,0 +1,23 @@
+@import url("Components/Completed/Header/header.css");
+@import url("Components/Completed/Container/todo_container.css");
+@import url("Components/Completed/Container/todo.css");
+
+@font-face{
+  font-family: 'Poppins';
+  src: url("assets/Poppins.ttf") format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  user-select: none;
+}
+
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
