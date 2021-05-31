@@ -1,0 +1,101 @@
+.form{
+    position: absolute;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+}
+
+.todo-input{
+    position: relative;
+    display: flex;
+    width: 85%; 
+    height: 2%;
+    height: 53.690000000000005px;
+    font-size: 25px;
+    text-indent: 10px;
+    background-color: transparent;
+    margin-left: 50px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    transition: .5s;
+    color: dodgerblue;
+    border-radius: 5px;
+    bottom: 0;
+    margin-bottom: 2%;
+    overflow-x: auto;
+    overflow-y: none;
+    resize: none;
+}
+
+.todo-button{
+    position: relative;
+    display: flex;
+    font-size: 20px;
+    height: max-content;
+    margin-top: 18px;
+    padding: 5px;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    border: none;
+    color: dodgerblue;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 21px;
+    cursor: pointer;
+    outline: none;
+    bottom: 0;
+}
+
+.todo-button.hover .todo-button-tooltip{
+  display: unset;
+  visibility: visible;
+  opacity: 1;
+}
+
+.todo-button:active{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: dodgerblue;
+  transition: .5s;
+}
+
+.todo-button:hover{
+  color: rgb(0, 116, 231);
+  transform: scale(1.2);
+}
+
+.todo-button-tooltip{
+    display: none;
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 15px;
+    bottom: 0;
+    height: max-content;
+    width: max-content;
+    max-width: 100px;
+    text-align: center;
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 4px;
+    transition: all 0.5s;
+    transform: translateY(-50px) translateX(-70px);
+    backface-visibility: hidden;
+    font-weight: 100;
+}
+
+.todo-button-tooltip::before{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 5px;
+  background: rgb(0, 0, 0);
+  z-index: -1;
+  transform:rotate(45deg) translateX(35px) translateY(40px);
+}
