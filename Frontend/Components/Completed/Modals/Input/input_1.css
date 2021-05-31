@@ -1,0 +1,124 @@
+.rename-background{
+    position: fixed;
+    display: none; /*flex*/
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    transition: all 500ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: open-rename-bg 1s 1 forwards;
+}   
+
+.rename-container{
+    position: relative;
+    padding: 70px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.rename-container h2{
+    color: #111;
+    margin-bottom: 45px;
+    line-height: 1em;
+    font-weight: 500;
+    padding-left: 10px;
+    border-left: 5px solid #e91e63;
+}
+
+.rename-container .inputBox{
+    position: relative;
+    width: 300px;
+    height: 46px;
+    margin-bottom: 35px;
+}
+
+.rename-container .inputBox:last-child{
+    margin-bottom: 0;
+}
+
+.rename-container .inputBox input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+}
+
+.rename-container .inputBox span{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events: none;
+    transform: translateY(-5px);
+}
+
+.rename-btn{
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+    background-color: #2196f3;
+    border: none;
+    transition: 500ms;
+    color: rgba(255, 255, 255, 0.99999);
+}
+
+.rename-btn:hover{
+    background-color: #094b81;
+}
+
+.rename-btn:active{
+    transition: 200ms;
+    background-color: rgb(94, 163, 94);
+}
+
+.close-rename-modal{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.close-rename-modal:hover{
+    opacity: 0.5;
+}
+
+.rename-container .inputBox input:focus ~ span,
+.rename-container .inputBox input:valid ~ span{
+    transform: translateX(-10px) translateY(-32px);
+    font-size: 12px;
+}
+
+@keyframes open-rename-bg{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
