@@ -1,0 +1,145 @@
+/* .todo {
+    display: block;
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    padding-left: 25px;
+  } */
+
+  .todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    padding: 5px;
+    padding-left: 25px;
+
+  }
+  
+  .todo li {
+    flex: 1;
+  }
+  
+  .todo-item {
+    padding: 0rem 0.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    user-select: text;
+    width: auto;
+    max-width: 86%;
+    margin-left: -15px;
+    overflow-wrap: break-word;
+  }  
+  
+  .completed{
+    position: relative;
+    border-radius: 50%;
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    border-width: 2px;
+    color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(0, 0, 0, 0.5);
+    left: -10px;
+    padding: 2px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    transition-duration: 0.5s;
+    outline: none;
+}
+   
+  .completed:hover{
+    border-color: transparent;
+    background-color: rgb(73, 204, 73);
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .completed:hover .tick{
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .complete-btn {
+    color: rgb(73, 204, 73);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+    background-color: white;
+}
+
+.complete-btn:active{
+  color: white;
+  background-color: #4b4e4b;
+}
+
+.complete-btn:hover{
+  color: rgb(73, 204, 73);
+  border-left: 0px;
+  border-right: 4px solid rgb(73, 204, 73);
+  transition: all 0.3s ease;
+  background-color: #343d34;
+}
+  
+  .star-button{
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    color: #444;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  .star-button:hover{
+    color: #fd4;
+  }
+  
+  .toggle-star-button{
+    color: #fd4;
+  }
+  
+  .trash-btn{
+    color: #ff6f47;
+    background: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.5s ease;
+  }
+  
+  .trash-btn:hover{
+    color: #343d34;
+  }
+  
+  .empty-div{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+  
+  .empty-li{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .item{
+    margin-left: 10px;
+    list-style: none;
+  }
+  
