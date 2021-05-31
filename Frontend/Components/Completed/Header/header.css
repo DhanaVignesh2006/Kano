@@ -1,0 +1,271 @@
+header{
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    min-width: 531px;
+    height: 0;
+    border-radius: 8px;
+    margin-top: 5px;
+    user-select: text;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.5);
+    animation-name: load-header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes load-header{
+  from{
+    height: 0;
+  }
+  to{
+    height: 62.7px;
+  }
+}
+
+.left-arrow{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 17px;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    width: fit-content;
+    margin-left: 2px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    transform: translateX(2000px);
+    animation-name: load-left-arrow;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    z-index: 200;
+}
+
+.left-arrow:hover .left-arrow-tooltip{
+    transition: all 0.5s;
+    display: unset;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .left-arrow:hover{
+    transition: all 0.5s;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .left-arrow-tooltip{
+      display: none;
+      position: absolute;
+      font-family: 'Poppins';
+      font-size: 15px;
+      bottom: 0;
+      height: max-content;
+      width: max-content;
+      max-width: 100px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      color: rgba(255, 255, 255, 0.8);
+      padding: 5px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      visibility: hidden;
+      opacity: 0;
+      border-radius: 4px;
+      transition: all 0.5s;
+      transform: translateY(50px);
+      backface-visibility: hidden;
+      font-weight: 100;
+  }
+  
+  .left-arrow-tooltip::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    transform: rotate(45deg) translateY(-5px);
+}
+
+@keyframes load-left-arrow{
+  from{
+    transform: translateX(2000px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+.group-name{
+    position: absolute;
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    font-size: 25px;
+    user-select: text;
+    color: rgba(255, 255, 255, 0.8);
+    transform: translateX(-1600px);
+    animation-name: load-group-name;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+.group-name::selection{
+  background-color: #fff;
+  color: #111;
+}
+
+.group-name::-moz-selection{
+  background-color: #fff;
+  color: #111;
+}
+
+@keyframes load-group-name{
+  from{
+    transform: translateX(-1600px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+.cake-menu{
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transform: scale(1);
+  right: 14px;
+  top: 10px;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-2000px);
+  animation: load-cake-menu;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transition: 500ms;
+}
+
+.cake-menu:hover{
+  background-color: #0999b0;
+}
+
+.icon{
+  display: flex;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.menus{
+  display: none;
+  position: relative;
+  top: 64px;
+  left: 1080px;
+  cursor: default;
+  width: max-content;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-cake-menu{
+  height: max-content;
+  display: block;
+}
+
+.group{
+  display: inline;
+}
+
+.menu{
+  display: inline;
+  padding: 5px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: default;
+}
+
+.menu:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.rename-menu{
+  padding-left: 12px;
+}
+
+.delete-icon, .print-icon, .rename-icon, .exit-icon{
+  padding: 10px;
+  display: inline;
+}
+
+.change-theme-icon{
+  padding: 18px;
+  display: inline;
+  color: #bb377d;
+}
+
+.rename-icon{
+  color: #bdc3c7;
+}
+
+.delete-icon{
+  color: #f64f57;
+}
+
+.exit-icon{
+  color: #c471ed;
+}
+
+.print-icon{
+  color: #12c2e9;
+}
+
+.change-theme-menu{
+  margin-left: -10px;
+}
+
+.delete-group, .exit-group{
+  padding-top: 16px;
+}
+
+.change-theme-group{
+  margin-bottom: 16px;
+}
+
+.delete-group, .print-group, .rename-group, .exit-group{
+  padding-bottom: 16px;
+  padding-left: 10px;
+}
+
+.separator{
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes load-cake-menu{
+  from{
+    transform: translateX(-2000px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
