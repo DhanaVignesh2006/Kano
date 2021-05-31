@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+    <link rel="icon" type="image/png" href="assets/test.png" size="640x640" />
+    <link rel="stylesheet" href="Frontend/frontpage.css">
+    <title>Kano</title>
+</head>
+<body> 
+
+    <div class="change-theme-modal-bg">
+        <div class="change-theme-modal">
+            <i class="fas fa-paint-brush"></i>
+            <div class="close-change-theme"><span class="times fas fa-times"></span></div>
+            <h2>Change Theme</h2>
+            <div class="colors-group">
+                <h2>Colors</h2>
+                <div class="width-height hover blue"></div>
+                <div class="width-height hover coral"></div>
+                <div class="width-height hover violet"></div>
+                <div class="width-height hover greenery"></div>
+                <div class="width-height hover rose-quartz"></div>
+                <div class="width-height hover yellow"></div>
+                <div class="width-height hover serenity"></div>
+                <div class="width-height hover purple"></div>
+                <div class="width-height hover dark"></div>
+            </div>
+            <div class="colors-group m-top">
+                <h2>Images</h2>
+                <div class="width-height hover beach"></div>
+                <div class="width-height hover tide"></div>
+                <div class="width-height hover lighthouse"></div>
+                <div class="width-height hover texture-bg"></div>
+                <div class="width-height hover forest"></div>
+                <div class="width-height hover man"></div>
+                <div class="width-height hover red-bg-hill"></div>
+                <div class="width-height hover castle"></div>
+                <div class="width-height hover texture-bg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "cakeMenu" class="cake-menu">
+        <div class="icon fas fa-ellipsis-h"></div>
+    </div>
+    <div class="menus" id = "items">
+        <div class="print-group ">
+            <div class="print-icon fas fa-print"></div>
+            <div class="menu print-menu">Print</div>
+        </div>
+        <div class="change-name-group">
+            <div class="change-name-icon fas fa-user"></div>
+            <div class="menu change-name-menu">Change Name</div>
+        </div>
+        <div class="change-theme-group">
+            <div class="change-theme-icon fas fa-paint-brush"></div>
+            <div class="menu change-theme-menu">Change Theme</div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="exit-group ">
+            <div class="exit-icon fas fa-arrow-left"></div>
+            <div class="menu exit-menu">Open Recently opened todo group</div>
+        </div>
+    </div>
+
+    <div class="alert-name">
+        <span class= "alert-span"></span>
+        <div class="alert-close" id = "alert-close-id">&times;</div>
+    </div>
+
+    <div id = "rename-bg-id" class="rename-background">
+        <div class="rename-container">
+            <div id = "rename-close-id" class="close-rename-modal fas fa-times"></div>
+            <h2>Enter your name</h2>
+            <form >
+                <div class="inputBox">
+                    <input id = "input-rename" type="text" required="required" autocomplete="off">
+                    <span>Enter your name</span>
+                </div>
+                <button type="submit" class="rename-btn" id="rename-btn-id">OK</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="alert-background">
+        <div class="alert-message-comtainer">
+            <div class="close-alert-modal"><i class="fas fa-times"></i></div>
+            <h2 class="alert-h2">alert</h2>
+            <p class="alert-p"></p>
+            <form>
+                <button class="alert-ok-btn">OK</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="input-modal-container">
+            <div class="close-input-modal"><i class="fas fa-times"></i></div>
+            <h2>Group Name</h2>
+            <form>
+                <div class="inputBox">
+                    <input type="text" class="input-modal-input" placeholder="Enter the Group Name">
+                </div>
+                <button type="submit" class="input-modal-btn">+ Add Group</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <div class="picture"></div>
+        <div class="name" id = "profile-name"></div>
+    </div>
+
+    <div class="container" id="container">
+        <div class="text-container">
+            <div class="all groups">
+                All
+            </div>
+
+            <div class="starred groups">
+                Starred
+            </div>
+            
+            <div class="completed groups">
+                Completed
+            </div>
+        </div>
+        <div class="add-group-div">
+        <button type="submit" class="add-group"></button>
+        </div>
+        <div class="group-container">
+            <h1 class="empty-groups">No Groups Created yet</h1>
+        </div>
+    </div>
+
+<script src="Backend/frontpage.js"></script>
+
+</body>
+</html>
