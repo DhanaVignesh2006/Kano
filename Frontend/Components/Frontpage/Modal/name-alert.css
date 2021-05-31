@@ -1,0 +1,25 @@
+.alert-name{
+    display: flex;
+    background-color: rgb(61, 56, 56);
+    position: absolute;   
+    min-width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    z-index: 300;
+    border-radius: 5px;
+    transform: translateX(-2500px) translateY(50%);
+    transition: 500ms;
+}
+.alert-span{
+    color: white;
+    display: inline;
+    padding-left: 10px;
+}
+.alert-close{
+    cursor: pointer;
+    display: inline;
+    font-size: 2rem;
+    height: fit-content;
+    padding-right: 10px;
+}
