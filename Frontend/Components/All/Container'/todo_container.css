@@ -1,0 +1,130 @@
+.todo-container{
+    position: absolute;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-left: 25%;
+    top: 12%;
+    width: 50%;
+    height: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    list-style: none;
+    transform: translateY(-2000px);
+    animation-name: load-container;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes load-container{
+  from{
+    transform: translateY(-2000px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+  
+.todo-container::-webkit-scrollbar{
+    background-color: transparent;
+}
+  
+.todo-container::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+  
+.todo-container::selection{
+    background-color: rgb(78, 66, 66);
+    color: white;
+}
+  
+.todo-container::-moz-selection{
+    background-color: rgb(78, 66, 66);
+    color: white;
+}
+  
+.svg{
+    display: none;
+    opacity: .8;
+    align-self: center;
+    justify-self: center;
+    object-fit: cover;
+}
+  
+.arrow{
+    position: absolute;
+    left: -25px;
+    margin-top: 7px;
+    cursor: pointer;
+    color: coral;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+  
+.extend{
+    position: relative;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    user-select: text;
+    padding-bottom: 5px;
+}
+  
+.container{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: max-content;
+    min-height: 50px;
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+  
+.extend::selection{
+    background-color: #ceb49e;
+    color: rgb(78, 66, 66);
+}
+  
+.extend::-moz-selection{
+    background-color: #ceb49e;
+    color: rgb(78, 66, 66);
+}
+  
+.todo-item::selection{
+    background-color: rgb(78, 66, 66);
+    color: #ceb49e;
+}
+  
+.todo-item::-moz-selection{
+    background-color: rgb(78, 66, 66);
+    color: #ceb49e;
+}
+  
+.container::-webkit-scrollbar{
+    background-color: transparent;
+}
+  
+.container::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+  
+.empty-groups{
+    display: none;
+    align-self: center;
+    justify-self: center;
+    margin-top: 35%;
+    margin-left: 23%;
+    color: rgba(255, 255, 255, 0.8);
+}
