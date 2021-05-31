@@ -1,0 +1,17 @@
+.complete{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateX(100%);
+}
+
+.toggle-complete-button{
+    background-color: rgb(73, 204, 73);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.toggle-star-button{
+    color: #fd4;
+}
