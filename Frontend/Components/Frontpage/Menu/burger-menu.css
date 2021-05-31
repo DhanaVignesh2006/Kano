@@ -1,0 +1,132 @@
+.cake-menu{
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transform: scale(1);
+    right: 14px;
+    top: 10px;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-2000px);
+    animation: load-cake-menu;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transition: 500ms;
+    z-index: 500;
+}
+
+.cake-menu:hover{
+    background-color: #0999b0;
+}
+  
+.icon{
+    display: flex;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.menus{
+    display: none;
+    position: relative;
+    top: 64px;
+    left: 1050px;
+    cursor: default;
+    width: 310px;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-cake-menu{
+    height: max-content;
+    position: absolute;
+    display: block;
+}
+
+.group{
+    display: inline;
+}
+
+.menu{
+    display: inline;
+    padding: 5px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: default;
+    text-overflow: ellipsis;
+}
+
+.menu:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+/* .change-name-menu{
+    padding-left: 12px;
+} */
+
+.delete-icon, .print-icon, .change-name-icon, .exit-icon{
+    padding: 10px;
+    display: inline;
+}
+
+.change-theme-icon{
+    padding: 18px;
+    display: inline;
+    color: #bb377d;
+}
+
+.change-name-icon{
+    color: #bdc3c7;
+}
+
+.delete-icon{
+    color: #f64f57;
+}
+
+.exit-icon{
+    color: #c471ed;
+}
+
+.print-icon{
+    color: #12c2e9;
+}
+
+.change-theme-menu{
+    margin-left: -10px;
+}
+
+.print-group, .exit-group{
+    padding-top: 16px;
+}
+
+.change-theme-group{
+    margin-bottom: 16px;
+}
+
+.delete-group, .print-group, .change-name-group, .exit-group{
+    padding-bottom: 16px;
+    padding-left: 10px;
+}
+
+.separator{
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes load-cake-menu{
+    from{
+        transform: translateX(-2000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
